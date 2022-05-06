@@ -1,11 +1,10 @@
 import style from "../styles/trillo.module.scss";
+import Header from "../components/Header";
 const Trillo=()=>{
 	return(
 		<div className={`${style.body}`}>
 			<div className={`${style.container}`}>
-				<header className={`${style.header}`}>
-				head
-				</header>
+				<Header/>
 				<div className={`${style.content}`}>
 					<nav className={style["sidebar"]}>
 						navigation
