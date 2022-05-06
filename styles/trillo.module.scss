@@ -3,6 +3,20 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: var(--color-grey-dark-2);
-
 	height: 100vh;
+	padding: 10rem;
+
+
 }
+
+.container {
+	max-width: 120rem;
+	margin-top: 120rem;
+	background-color: var(--color-grey-light-2);
+	box-shadow: 0 2rem 6rem rgba(0,0,0,.3);
+	//min-height: 30rem;
+}
+.header {}
+.content {}
+.sidebar {}
+.hotel-view {}

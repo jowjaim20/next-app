@@ -2,15 +2,15 @@ import style from "../styles/trillo.module.scss";
 const Trillo=()=>{
 	return(
 		<div className={`${style.body}`}>
-			<div className={`${style.container} flex flex-col`}>
-				<header className="text-center">
+			<div className={`${style.container}`}>
+				<header className={`${style.header}`}>
 				head
 				</header>
-				<div className="content flex">
-					<nav className='basis-2/6 bg-black h-screen'>
+				<div className={`${style.content}`}>
+					<nav className={style["sidebar"]}>
 						navigation
 					</nav>
-					<main className='flex-auto'>
+					<main className={`${style['hotel-view']}`}>
 						hotel view test
 					</main>
 				</div>
