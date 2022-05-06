@@ -11,7 +11,7 @@ const Trillo=()=>{
 						navigation
 					</nav>
 					<main className='flex-auto'>
-						hotel view
+						hotel view test
 					</main>
 				</div>
 			</div>
