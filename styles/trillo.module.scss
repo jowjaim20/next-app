@@ -9,9 +9,12 @@ body {}
 	min-height: 50rem;
 }
 .header {
-	
+
 	background-color: #fff;
 	border-bottom: var(--color-grey-light-2);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .content {
 	display: flex;
@@ -24,6 +27,51 @@ body {}
 	background-color: aqua;
 	flex: 1;
 }
-.icon{
-	fill: red;
+.logo__box {
+	margin-left: 1rem;
+	border-radius: 100px;
+	width: 5rem;
+	height: 5rem;
+	background-color: red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	//padding: 20rem;
+}
+
+.search {
+	display: flex;
+	align-items: center;
+	background-color: var(--color-grey-light-3);
+	padding: .5rem 2rem;
+	border-radius: 100px;
+	box-shadow: var(--shadow-dark);
+	&::active {
+		outline: none;
+	}
+	&__input {
+		background-color: var(--color-grey-light-3);
+	}
+	&__button {}
+	&__icon {
+		fill: var(--color-primary);
+	}
+}
+
+.userNav {
+	display: flex;
+	align-items: center;
+	&__iconBox {
+		display: flex;
+	}
+	&__icon {}
+	&__notification {}
+	&__user {
+		display: flex;
+		align-items: center;
+	}
+	&__user_photo {
+		border-radius: 100px;
+	}
+	&__userName {}
 }
