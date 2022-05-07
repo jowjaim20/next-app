@@ -8,8 +8,8 @@ import Bookmark from "../public/img/SVG/bookmark.svg";
 const Header = () => {
   return (
     <header className={`${style.header} flex items-center`}>
-   	<div className={style.logo__box}>
-   		 <Image src={Logo} alt="logo" className="logo" width={40} height={40} />
+      <div className={style.logo__box}>
+        <Image src={Logo} alt="logo" className="logo" width={40} height={40} />
       </div>
       <form action="#" className={`${style.search}`}>
         <input
@@ -22,24 +22,24 @@ const Header = () => {
         </button>
       </form>
       <nav className={style.userNav}>
-      	<div className={style.userNav__iconBox}>
-      		<Bookmark className={style.userNav__icon}/>
-      		<span className={style.userNav__notification}>
-      		12
-      		</span>
-      	</div>
-      	<div className={style.userNav__iconBox}>
-      		<Chat className={style.userNav__icon}/>
-      			<span className={style.userNav__notification}>
-      		11
-      		</span>
-      	</div>
-      	<div className={style.userNav__user}>
-      	  <Image src={Logo} alt="user photo" className={style.userNav__user_photo} width={25} height={25} />
-      		<span className={style.userNav__userName}>
-      			Joel
-      		</span>
-      	</div>
+        <div className={style.userNav__iconBox}>
+          <Bookmark className={style.userNav__icon} />
+          <span className={style.userNav__notification}>12</span>
+        </div>
+        <div className={style.userNav__iconBox}>
+          <Chat className={style.userNav__icon} />
+          <span className={style.userNav__notification}>11</span>
+        </div>
+        <div className={style.userNav__user}>
+          <Image
+            src={Logo}
+            alt="user photo"
+            className={style.userNav__user_photo}
+            width={25}
+            height={25}
+          />
+          <span className={style.userNav__userName}>Joel</span>
+        </div>
       </nav>
     </header>
   );
