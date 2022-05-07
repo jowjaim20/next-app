@@ -15,6 +15,7 @@ body {}
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
 }
 .content {
 	display: flex;
@@ -30,8 +31,8 @@ body {}
 .logo__box {
 	margin-left: 1rem;
 	border-radius: 100px;
-	width: 5rem;
-	height: 5rem;
+	width: 3.25rem;
+	height: 3.25rem;
 	background-color: red;
 	display: flex;
 	justify-content: center;
@@ -40,38 +41,74 @@ body {}
 }
 
 .search {
+	flex: 0 0 40%;
 	display: flex;
+	justify-content: center;
 	align-items: center;
-	background-color: var(--color-grey-light-3);
-	padding: .5rem 2rem;
-	border-radius: 100px;
-	box-shadow: var(--shadow-dark);
-	&::active {
-		outline: none;
-	}
+
 	&__input {
+		font-family: inherit;
+		font-size: inherit;
+		color: inherit;
+		background-color: var(--color-grey-light-2);
+		border: none;
+		padding: .7rem 2rem;
+		border-radius: 100px;
+		width: 90%;
+		margin-right: -3.5rem;
+		transition: all .2s;
+
+		&:focus {
+			outline: none;
+			width: 100%;
+			background-color: var(--color-grey-light-3);
+		}
+		&::-webkit-input-placeholder {
+			font-weight: 100;
+			color: var(--color-grey-light-4);
+		}
+	}
+	&__input + &__button {
 		background-color: var(--color-grey-light-3);
 	}
-	&__button {}
+	&__button {
+		border: none;
+		background-color: var(--color-grey-light-2);
+		&:focus {
+			outline: none;
+		}
+		&:active {
+			transform: translateY(2px);
+		}
+	}
 	&__icon {
-		fill: var(--color-primary);
+		height: 2rem;
+		width: 2rem;
+		fill: var(--color-grey-dark-3);
+
 	}
 }
 
 .userNav {
+	background-color: gold;
 	display: flex;
 	align-items: center;
 	&__iconBox {
 		display: flex;
 	}
-	&__icon {}
+	&__icon {
+		height: 2.25rem;
+		width: 2.25rem;
+	}
 	&__notification {}
 	&__user {
 		display: flex;
 		align-items: center;
 	}
 	&__user_photo {
-		border-radius: 100px;
+		height: 3.75rem;
+		border-radius: 50%;
+		background-color: var(--color-primary-light);
 	}
 	&__userName {}
 }

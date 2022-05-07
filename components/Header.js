@@ -7,7 +7,7 @@ import Bookmark from "../public/img/SVG/bookmark.svg";
 
 const Header = () => {
   return (
-    <header className={`${style.header} flex items-center`}>
+    <header className={`${style.header}`}>
       <div className={style.logo__box}>
         <Image src={Logo} alt="logo" className="logo" width={40} height={40} />
       </div>
