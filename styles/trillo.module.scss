@@ -29,10 +29,13 @@ body {}
 	flex: 1;
 }
 .logo__box {
+	width: 3.5rem;
+}
+.logo__wrapper {
 	margin-left: 1rem;
 	border-radius: 100px;
-	width: 3.25rem;
-	height: 3.25rem;
+	width: 100%;
+	height: 100%;
 	background-color: red;
 	display: flex;
 	justify-content: center;
@@ -90,25 +93,65 @@ body {}
 }
 
 .userNav {
-	background-color: gold;
+
+	align-self: stretch;
+	//background-color: gold;
 	display: flex;
 	align-items: center;
-	&__iconBox {
+
+
+	& > * {
+		padding: 0 1rem;
+		cursor: pointer;
+		height: 100%;
 		display: flex;
+		align-items: center;
+	}
+	& > *:hover {
+		background-color: var(--color-grey-light-2);
+	}
+
+
+	&__iconBox {
+		position: relative;
+		display: flex;
+		align-items: center;
 	}
 	&__icon {
 		height: 2.25rem;
 		width: 2.25rem;
+		fill: var(--color-grey-dark-2);
 	}
-	&__notification {}
-	&__user {
+	&__notification {
+		position: absolute;
+		right: 2px;
+		top: 2px;
+		font-size: .8rem;
+		height: 1.75rem;
+		width: 1.75rem;
+		border-radius: 50%;
+		background-color: var(--color-primary);
+		color: #fff;
 		display: flex;
+		justify-content: center;
 		align-items: center;
 	}
-	&__user_photo {
+	&__user {}
+	&__user_photoContainer {
+		//background-color: red;
 		height: 3.75rem;
+		width: 3.75rem;
+	}
+	&__user_photoWrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height:100%;
+		width: 100%;
 		border-radius: 50%;
 		background-color: var(--color-primary-light);
 	}
-	&__userName {}
+	&__userName {
+		margin-left: 1rem;
+	}
 }
