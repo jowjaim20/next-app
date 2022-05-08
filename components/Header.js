@@ -8,10 +8,16 @@ import Bookmark from "../public/img/SVG/bookmark.svg";
 const Header = () => {
   return (
     <header className={`${style.header}`}>
-    <div className={style.logo__box}>
-      <div className={style.logo__wrapper}>
-        <Image src={Logo} alt="logo" className="logo" width={100} height={100} />
-      </div>
+      <div className={style.logo__box}>
+        <div className={style.logo__wrapper}>
+          <Image
+            src={Logo}
+            alt="logo"
+            className="logo"
+            width={100}
+            height={100}
+          />
+        </div>
       </div>
       <form action="#" className={`${style.search}`}>
         <input
@@ -34,15 +40,9 @@ const Header = () => {
         </div>
         <div className={style.userNav__user}>
           <div className={style.userNav__user_photoContainer}>
-          <div className={style.userNav__user_photoWrapper}>
-          <Image
-            src={Logo}
-            alt="user photo"
-            
-            width={25}
-            height={25}
-          />
-          </div>
+            <div className={style.userNav__user_photoWrapper}>
+              <Image src={Logo} alt="user photo" width={25} height={25} />
+            </div>
           </div>
           <span className={style.userNav__userName}>Joel</span>
         </div>
